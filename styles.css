@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+
+.evaporada {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.Background2 {
+    background: url(image_sample.png);
+    height: 1200px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+}
+
+.menu {
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 100px 100px 350px;
+    overflow: hidden;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+h1,
+h2 {
+    margin: 0px;
+}
+
+.collections {
+    background: url(clucli.png);
+    background-color: rgb(2, 56, 2);
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.collections div {
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    margin: 30px;
+
+}
+
+.logos_media {
+    height: 25px;
+    width: 25px;
+    margin: 6px;
+
+}
+
+.logo {
+    height: 50px;
+    margin-left: 8px;
+    margin-top: 5px;
+
+}
+
+.main_sample {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
+.inspiration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(67, 67, 67);
+    height: 60px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    height: 80px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: rgb(89, 89, 235);
+}
