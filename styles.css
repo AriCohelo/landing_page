@@ -12,7 +12,7 @@ body {
 }
 
 .Background2 {
-    background: url(image_sample.png);
+    background: url(./images/image_sample.png);
     height: 1200px;
     background-position: center;
     background-size: cover;
@@ -48,15 +48,16 @@ body {
 
 .main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 60vh;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
     background: rgba(255, 255, 255, .2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     border-radius: 25px;
-    padding: 20px;
-    margin: 100px 100px 350px;
+    padding: 20px 0px;
+    margin: 200px 100px 350px;
     overflow: hidden;
 
 }
@@ -65,33 +66,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    
+  
+    width: 50%;
 }
 
-h1,
-h2 {
-    margin: 0px;
-}
-
-.collections {
-    background: url(clucli.png);
-    background-color: rgb(2, 56, 2);
-    height: 800px;
-    width: 100%;
+.collections {  
+    background-color: #393426;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100%;
+    padding: 50px 10px;
 }
 
 .collections div {
-    height: 250px;
-    width: 250px;
-    background-color: aqua;
+    height: 220px;
+    width: 220px;
+    background-color: rgb(0, 0, 0);
     margin: 30px;
 
 }
@@ -110,17 +101,23 @@ h2 {
 
 }
 
-.main_sample {
-    max-width: 70%;
-    max-height: 70%;
+.clucli{
+    max-width: 220px;
+    max-height: 220px;
     width: auto;
     height: auto;
     display: flex;
     flex-shrink: 1;
     object-fit: contain;
+    border-radius: 50%;
+    border: solid 10px rgb(128, 128, 128);
+    margin: 20px;
+ 
 }
 
 .inspiration {
+    color: rgb(193, 193, 193);
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +125,8 @@ h2 {
     height: 600px;
     width: 600px;
     border-radius: 50%;
+padding: 30px;
+text-align: center;
 }
 
 .footer {
@@ -157,9 +156,18 @@ li {
 }
 
 button {
-    height: 80px;
-    width: 200px;
-    margin: 20px;
-    border-radius: 25px;
-    background-color: rgb(89, 89, 235);
+    height: 60px;
+    width: 180px;
+    border-radius: 40px;
+    background-color: #33435E;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    /* max-width: 80%; */
+    text-align: center;
+    margin: 20px 0px 0px;
 }
