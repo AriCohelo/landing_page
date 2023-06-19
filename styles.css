@@ -14,12 +14,12 @@ body {
 .Background2 {
     background: url(./images/image_sample.png);
     height: 1200px;
-    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -36,7 +36,7 @@ body {
 }
 
 .menu {
-
+    
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -46,6 +46,11 @@ body {
     margin-right: 30px;
 }
 
+.menu a {
+    text-decoration: none;
+    color: black;
+
+}
 .main {
     display: flex;
     flex-direction: row;
@@ -63,20 +68,36 @@ body {
 }
 
 .info {
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-  
     width: 50%;
 }
 
-.collections {  
+.info a {
+    color: black;
+    font-weight: 900;
+    padding: 15px 40px;
+    background: gray;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.collections {
     background-color: #393426;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
     padding: 50px 10px;
+    justify-content: center;
 }
 
 .collections div {
@@ -101,7 +122,7 @@ body {
 
 }
 
-.clucli{
+.clucli {
     max-width: 220px;
     max-height: 220px;
     width: auto;
@@ -112,31 +133,81 @@ body {
     border-radius: 50%;
     border: solid 10px rgb(128, 128, 128);
     margin: 20px;
- 
+
 }
 
 .inspiration {
     color: rgb(193, 193, 193);
     font-size: 25px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     background-color: rgba(0, 0, 0, .5);
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
-padding: 30px;
-text-align: center;
+    padding: 30px;
+    text-align: center;
+    flex-shrink: 0;
+
+}
+.inspiration p {
+    margin-bottom: 100px;
+    margin-top: 40;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.inspiration a {
+    color: black;
+    font-weight: 900;
+    padding: 15px 40px;
+    background: gray;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    text-align: center;
+    height: 60PX;
+    width: 60px;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
     background-color: rgb(67, 67, 67);
     height: 60px;
     width: 100%;
+}
+
+.footer img {
+    height: 30px;
+    margin-left: 20px;
+}
+.footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.footer p {
+    margin: 0px;
 }
 
 ul {
@@ -144,28 +215,18 @@ ul {
 
 }
 
-a {
-    text-decoration: none;
-    color: black;
-
-}
 
 li {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-button {
-    height: 60px;
-    width: 180px;
-    border-radius: 40px;
-    background-color: #33435E;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+
+
 h1 {
     text-align: center;
 }
+
 h2 {
     /* max-width: 80%; */
     text-align: center;
